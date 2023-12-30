@@ -59,12 +59,13 @@ def generate_mob_advancements():
 
     for tier in config['tiers']:
         mobs: list[str] = tier['mobs']
+        tier_name: str = tier['name']
+        parent = f'tier_{tier_name}'
         for mob in mobs:
             title = config['advancement_title'].replace(
                 '<mob>', capitalize_all(mob.replace('_', ' ')))
             description = config['advancement_description'].replace(
                 '<mob>', mob.replace('_', ' '))
-            tier_name: str = tier['name']
             point_function_name = f'mob_slayer:add_{tier["points"]}_point{"" if tier["points"] == 1 else "s"}'
             data = {
                 'display': {
@@ -74,7 +75,7 @@ def generate_mob_advancements():
                     'title': title,
                     'description': description,
                 },
-                'parent': f'mob_slayer:mob_slayer/tier_{tier_name}',
+                'parent': f'mob_slayer:mob_slayer/{parent}',
                 'criteria': {
                     f'killed_{mob}': {
                         'trigger': 'minecraft:player_killed_entity',
@@ -90,8 +91,41 @@ def generate_mob_advancements():
                     'loot': [f'mob_slayer:reward_{tier_name}']
                 }
             }
+            file_name = f'killed_{mob}.json'
+            parent = file_name[:-5]
             json.dump(data, pathlib.Path(
-                path_advancements / f'killed_{mob}.json').open('w+'))
+                path_advancements / file_name).open('w+'))
+        
+        # after all mobs add the tier advancement again as a kind of label and to reveal every advancment in between
+        generate_tier_advancement(
+            path_advancements,
+            tier['name'] + '_end',
+            tier['tier_icon'],
+            tier['title'],
+            tier['description'],
+            parent
+        )
+
+
+def generate_tier_advancement(path: str, name: str, icon: str, title: str, description: str, parent: str):
+    data = {
+        'display': {
+            'icon': {
+                'item': f'minecraft:{icon}',
+            },
+            'title': title,
+            'description': description,
+            'show_toast': False,
+            'announce_to_chat': False,
+        },
+        'parent': f'mob_slayer:mob_slayer/{parent}',
+        'criteria': {
+            'true': {
+                'trigger': 'minecraft:tick'
+            }
+        },
+    }
+    json.dump(data, pathlib.Path(path / f'tier_{name}.json').open('w+'))
 
 
 def generate_tier_advancements():
@@ -102,27 +136,14 @@ def generate_tier_advancements():
     parent = 'root'
 
     for tier in config['tiers']:
-        tier_name: str = tier['name']
-        data = {
-            'display': {
-                'icon': {
-                    'item': f'minecraft:{tier["tier_icon"]}',
-                },
-                'title': tier['title'],
-                'description': tier['description'],
-                'show_toast': False,
-                'announce_to_chat': False,
-            },
-            'parent': f'mob_slayer:mob_slayer/{parent}',
-            'criteria': {
-                'true': {
-                    'trigger': 'minecraft:tick'
-                }
-            },
-        }
-        file_name = f'tier_{tier_name}.json'
-        parent = file_name[:-5]
-        json.dump(data, pathlib.Path(path_advancements / file_name).open('w+'))
+        generate_tier_advancement(
+            path_advancements,
+            tier['name'],
+            tier['tier_icon'],
+            tier['title'],
+            tier['description'],
+            parent
+        )
 
 
 if __name__ == '__main__':
