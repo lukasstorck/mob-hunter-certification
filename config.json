@@ -1,12 +1,10 @@
 {
-    "advancement_title": "Certified <mob> Slayer",
-    "advancement_description": "Kill a <mob>",
     "tiers": [
         {
             "name": "iron",
             "tier_icon": "iron_ingot",
             "title": "Iron Tier",
-            "description": "Killing a mob rewards three iron ingots",
+            "description": "Killing a mob rewards three iron ingots and 1 point",
             "points": 1,
             "mobs": [
                 "zombie",
@@ -28,7 +26,7 @@
             "name": "gold",
             "tier_icon": "gold_ingot",
             "title": "Gold Tier",
-            "description": "Killing a mob rewards five gold ingots",
+            "description": "Killing a mob rewards five gold ingots and 3 points",
             "points": 3,
             "mobs": [
                 "zombie_villager",
@@ -49,7 +47,7 @@
             "name": "diamond",
             "tier_icon": "diamond",
             "title": "Diamond Tier",
-            "description": "Killing a mob rewards one diamond",
+            "description": "Killing a mob rewards one diamond and 5 points",
             "points": 5,
             "mobs": [
                 "witch",
@@ -81,7 +79,7 @@
             "name": "ender",
             "tier_icon": "ender_pearl",
             "title": "Ender Tier",
-            "description": "Killing a mob rewards three ender pearls and one netherite scrap",
+            "description": "Killing a mob rewards three ender pearls, one netherite scrap and 10 points",
             "points": 10,
             "mobs": [
                 "ghast",
@@ -110,7 +108,7 @@
             "name": "withering",
             "tier_icon": "wither_rose",
             "title": "Withering Tier",
-            "description": "Killing a mob rewards one golden apple",
+            "description": "Killing a mob rewards one golden apple and 20 points",
             "points": 20,
             "mobs": [
                 "wither_skeleton",
@@ -131,7 +129,7 @@
             "name": "undying",
             "tier_icon": "totem_of_undying",
             "title": "Undying Tier",
-            "description": "Killing a mob rewards one totem of undying",
+            "description": "Killing a mob rewards one totem of undying and 30 points",
             "points": 30,
             "mobs": [
                 "elder_guardian",
@@ -150,7 +148,7 @@
             "name": "boss",
             "tier_icon": "wither_skeleton_skull",
             "title": "Boss Tier",
-            "description": "Killing a mob rewards five potions of strength",
+            "description": "Killing a mob rewards five potions of strength and 100 points",
             "points": 100,
             "mobs": [
                 "ender_dragon",
@@ -169,7 +167,7 @@
             "name": "warden",
             "tier_icon": "flower_pot",
             "title": "Warden Tier",
-            "description": "Killing a mob rewards a flower pot.",
+            "description": "Killing a mob rewards a flower pot and 250 points",
             "points": 250,
             "mobs": [
                 "warden"
@@ -181,5 +179,7 @@
                 }
             ]
         }
-    ]
+    ],
+    "advancement_title": "Certified <mob> Slayer",
+    "advancement_description": "Kill a <mob>"
 }
