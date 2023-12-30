@@ -1,0 +1,185 @@
+{
+    "advancement_title": "Certified <mob> Slayer",
+    "advancement_description": "Kill a <mob>",
+    "tiers": [
+        {
+            "name": "iron",
+            "tier_icon": "iron_ingot",
+            "title": "Iron Tier",
+            "description": "Killing a mob rewards three iron ingots",
+            "points": 1,
+            "mobs": [
+                "zombie",
+                "skeleton",
+                "creeper",
+                "spider",
+                "drowned",
+                "villager",
+                "glow_squid"
+            ],
+            "rewards": [
+                {
+                    "item_name": "minecraft:iron_ingot",
+                    "amount": 3
+                }
+            ]
+        },
+        {
+            "name": "gold",
+            "tier_icon": "gold_ingot",
+            "title": "Gold Tier",
+            "description": "Killing a mob rewards five gold ingots",
+            "points": 3,
+            "mobs": [
+                "zombie_villager",
+                "husk",
+                "stray",
+                "bat",
+                "bee",
+                "goat"
+            ],
+            "rewards": [
+                {
+                    "item_name": "minecraft:gold_ingot",
+                    "amount": 5
+                }
+            ]
+        },
+        {
+            "name": "diamond",
+            "tier_icon": "diamond",
+            "title": "Diamond Tier",
+            "description": "Killing a mob rewards one diamond",
+            "points": 5,
+            "mobs": [
+                "witch",
+                "enderman",
+                "pillager",
+                "zombified_piglin",
+                "piglin",
+                "magma_cube",
+                "hoglin",
+                "mooshroom",
+                "polar_bear",
+                "axolotl",
+                "parrot",
+                "iron_golem",
+                "snow_golem",
+                "llama",
+                "strider",
+                "camel",
+                "ocelot"
+            ],
+            "rewards": [
+                {
+                    "item_name": "minecraft:diamond",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "ender",
+            "tier_icon": "ender_pearl",
+            "title": "Ender Tier",
+            "description": "Killing a mob rewards three ender pearls and one netherite scrap",
+            "points": 10,
+            "mobs": [
+                "ghast",
+                "piglin_brute",
+                "slime",
+                "silverfish",
+                "cave_spider",
+                "phantom",
+                "blaze",
+                "rabbit",
+                "pufferfish",
+                "sniffer"
+            ],
+            "rewards": [
+                {
+                    "item_name": "minecraft:netherite_scrap",
+                    "amount": 1
+                },
+                {
+                    "item_name": "minecraft:ender_pearl",
+                    "amount": 3
+                }
+            ]
+        },
+        {
+            "name": "withering",
+            "tier_icon": "wither_rose",
+            "title": "Withering Tier",
+            "description": "Killing a mob rewards one golden apple",
+            "points": 20,
+            "mobs": [
+                "wither_skeleton",
+                "guardian",
+                "vindicator",
+                "vex",
+                "skeleton_horse",
+                "endermite"
+            ],
+            "rewards": [
+                {
+                    "item_name": "minecraft:golden_apple",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "undying",
+            "tier_icon": "totem_of_undying",
+            "title": "Undying Tier",
+            "description": "Killing a mob rewards one totem of undying",
+            "points": 30,
+            "mobs": [
+                "elder_guardian",
+                "evoker",
+                "ravager",
+                "shulker"
+            ],
+            "rewards": [
+                {
+                    "item_name": "minecraft:totem_of_undying",
+                    "amount": 1
+                }
+            ]
+        },
+        {
+            "name": "boss",
+            "tier_icon": "wither_skeleton_skull",
+            "title": "Boss Tier",
+            "description": "Killing a mob rewards five potions of strength",
+            "points": 100,
+            "mobs": [
+                "ender_dragon",
+                "wither",
+                "player"
+            ],
+            "rewards": [
+                {
+                    "item_name": "minecraft:potion",
+                    "potion_id": "minecraft:long_strength",
+                    "amount": 5
+                }
+            ]
+        },
+        {
+            "name": "warden",
+            "tier_icon": "flower_pot",
+            "title": "Warden Tier",
+            "description": "Killing a mob rewards a flower pot.",
+            "points": 250,
+            "mobs": [
+                "warden"
+            ],
+            "rewards": [
+                {
+                    "item_name": "minecraft:flower_pot",
+                    "amount": 1
+                }
+            ]
+        }
+    ]
+}

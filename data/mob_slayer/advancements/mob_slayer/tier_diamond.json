@@ -1,0 +1,1 @@
+{"display": {"icon": {"item": "minecraft:diamond"}, "title": "Diamond Tier", "description": "Killing a mob rewards one diamond", "show_toast": false, "announce_to_chat": false}, "parent": "mob_slayer:mob_slayer/tier_gold", "criteria": {"true": {"trigger": "minecraft:tick"}}}

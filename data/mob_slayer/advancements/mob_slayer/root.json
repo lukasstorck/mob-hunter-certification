@@ -1,0 +1,16 @@
+{
+    "display": {
+        "icon": {
+            "item": "minecraft:diamond_sword"
+        },
+        "title": "Mob Slayer",
+        "description": "Show your might by ridding the world of mobs",
+        "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+        "show_toast": false
+    },
+    "criteria": {
+        "true": {
+            "trigger": "minecraft:tick"
+        }
+    }
+}

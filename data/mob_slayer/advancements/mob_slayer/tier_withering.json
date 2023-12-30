@@ -1,0 +1,1 @@
+{"display": {"icon": {"item": "minecraft:wither_rose"}, "title": "Withering Tier", "description": "Killing a mob rewards one golden apple", "show_toast": false, "announce_to_chat": false}, "parent": "mob_slayer:mob_slayer/tier_ender", "criteria": {"true": {"trigger": "minecraft:tick"}}}
