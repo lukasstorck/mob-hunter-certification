@@ -1,0 +1,1 @@
+scoreboard players add @s mhc_score_total 3

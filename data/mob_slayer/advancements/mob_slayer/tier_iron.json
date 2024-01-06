@@ -1,1 +1,0 @@
-{"display": {"icon": {"item": "minecraft:iron_ingot"}, "title": "Iron Tier", "description": "Killing a mob rewards three iron ingots and 1 point", "show_toast": false, "announce_to_chat": false}, "parent": "mob_slayer:mob_slayer/root", "criteria": {"true": {"trigger": "minecraft:tick"}}}

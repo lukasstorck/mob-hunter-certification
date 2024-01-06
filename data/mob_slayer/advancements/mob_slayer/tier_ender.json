@@ -1,1 +1,0 @@
-{"display": {"icon": {"item": "minecraft:ender_pearl"}, "title": "Ender Tier", "description": "Killing a mob rewards three ender pearls, one netherite scrap and 10 points", "show_toast": false, "announce_to_chat": false}, "parent": "mob_slayer:mob_slayer/root", "criteria": {"true": {"trigger": "minecraft:tick"}}}

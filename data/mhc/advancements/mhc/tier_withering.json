@@ -1,0 +1,1 @@
+{"display": {"icon": {"item": "minecraft:wither_rose"}, "title": "Withering Tier", "description": "Killing a mob rewards one golden apple and 20 points", "show_toast": false, "announce_to_chat": false}, "parent": "mhc:mhc/root", "criteria": {"true": {"trigger": "minecraft:tick"}}}

@@ -1,0 +1,1 @@
+{"display": {"icon": {"item": "minecraft:flower_pot"}, "title": "Warden Tier", "description": "Killing a mob rewards a flower pot and 250 points", "show_toast": false, "announce_to_chat": false}, "parent": "mhc:mhc/root", "criteria": {"true": {"trigger": "minecraft:tick"}}}

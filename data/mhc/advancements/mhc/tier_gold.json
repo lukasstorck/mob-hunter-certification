@@ -1,0 +1,1 @@
+{"display": {"icon": {"item": "minecraft:gold_ingot"}, "title": "Gold Tier", "description": "Killing a mob rewards five gold ingots and 3 points", "show_toast": false, "announce_to_chat": false}, "parent": "mhc:mhc/root", "criteria": {"true": {"trigger": "minecraft:tick"}}}

@@ -1,0 +1,1 @@
+{"display": {"icon": {"item": "minecraft:totem_of_undying"}, "title": "Undying Tier", "description": "Killing a mob rewards one totem of undying and 30 points", "show_toast": false, "announce_to_chat": false}, "parent": "mhc:mhc/root", "criteria": {"true": {"trigger": "minecraft:tick"}}}

@@ -1,0 +1,1 @@
+{"display": {"icon": {"item": "minecraft:zombie_spawn_egg"}, "title": "Certified Zombie Slayer", "description": "Kill a zombie"}, "parent": "mhc:mhc/tier_iron", "criteria": {"killed_zombie": {"trigger": "minecraft:player_killed_entity", "conditions": {"entity": {"type": "minecraft:zombie"}}}}, "rewards": {"function": "mhc:add_1_point", "loot": ["mhc:reward_iron"]}}

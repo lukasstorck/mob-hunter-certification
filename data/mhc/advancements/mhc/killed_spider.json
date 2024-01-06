@@ -1,0 +1,1 @@
+{"display": {"icon": {"item": "minecraft:spider_spawn_egg"}, "title": "Certified Spider Slayer", "description": "Kill a spider"}, "parent": "mhc:mhc/killed_creeper", "criteria": {"killed_spider": {"trigger": "minecraft:player_killed_entity", "conditions": {"entity": {"type": "minecraft:spider"}}}}, "rewards": {"function": "mhc:add_1_point", "loot": ["mhc:reward_iron"]}}
