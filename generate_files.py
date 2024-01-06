@@ -37,12 +37,12 @@ def generate_loot_tables():
                         {
                             'type': 'minecraft:item',
                             'name': reward['item_name'],
-                            'functions': [
+                            **({'functions': [
                                 {
                                     'function': 'minecraft:set_potion',
                                     'id': reward['potion_id']
                                 }
-                            ] if 'potion_id' in reward else None
+                            ]} if 'potion_id' in reward else {})
                         }
                     ]
                 } for reward in tier['rewards']
