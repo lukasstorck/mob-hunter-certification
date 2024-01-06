@@ -15,7 +15,7 @@ A minecraft datapack that tracks and rewards mob kills.
 
 ## Installation
 
-1. Download the latest datapack file _mhc.zip_ from the [releases](https://github.com/lukasstorck/mob-slayer/releases).
+1. Download the latest datapack file _mhc.zip_ from the [releases](https://github.com/lukasstorck/mob-hunter-certification/releases).
 2. Find the datapack folder of a world save.
 3. Copy the zip file into the datapack folder.
 4. run `/reload`
