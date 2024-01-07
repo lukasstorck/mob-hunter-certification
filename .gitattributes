@@ -1,6 +1,0 @@
-# .gitattributes
-
-# Force LF line endings for all datapack files
-*.json text eol=lf
-*.mcfunction text eol=lf
-*.mcmeta text eol=lf
