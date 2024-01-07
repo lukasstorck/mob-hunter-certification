@@ -33,3 +33,6 @@ The datapack can be used as is or reconfigured via the [python script](./generat
 - rewards per tier, that are granted on each first kill of a mob of that tier
 - tier icon, title and description, as well as the score points awarded
 - title and description patterns of advancements
+
+## Known issues
+Generating and importing (drag & drop) from the git repository folder directly into Minecraft sometimes fails with "Non-pack entries: The following entries were not valid packs and were not copied: mob-hunter-certification.zip". This can be worked around by copying the zip-file to another location outside the git repository and loading it from there instead.
