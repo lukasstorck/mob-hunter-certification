@@ -1,7 +1,7 @@
 # only for debugging
-# function mhc:_remove
+# function mhr:_remove
 
-function mhc:create_tables
+function mhr:create_tables
 
 # only for debugging
 # scoreboard objectives setdisplay sidebar mhr_score_total
