@@ -4,5 +4,5 @@ mob-hunting-rewards.zip
 # ignore generated files
 data/mhr/advancements/mhr/killed_*.json
 data/mhr/advancements/mhr/tier_*.json
-data/mhr/functions/add_*.json
+data/mhr/functions/add_*.mcfunction
 data/mhr/loot_tables/reward_*.json
