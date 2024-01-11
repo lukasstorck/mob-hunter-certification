@@ -16,7 +16,7 @@ def generate_point_functions():
 
     for tier in config['tiers']:
         function_name = f'add_{tier["points"]}_point{"" if tier["points"] == 1 else "s"}'
-        function = f'scoreboard players add @s mhc_score_total {tier["points"]}'
+        function = f'scoreboard players add @s mhr_score_total {tier["points"]}'
         pathlib.Path(path_functions /
                      f'{function_name}.mcfunction').open('w+').write(function)
 

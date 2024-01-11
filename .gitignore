@@ -1,5 +1,5 @@
 # ignore zipped datapack
-mob-hunter-certification.zip
+mob-hunting-rewards.zip
 
 # ignore generated files
 data/mhc/advancements/mhc/killed_*.json
