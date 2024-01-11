@@ -1,1 +1,0 @@
-{"type": "minecraft:advancement_reward", "pools": [{"rolls": 5, "entries": [{"type": "minecraft:item", "name": "minecraft:potion", "functions": [{"function": "minecraft:set_potion", "id": "minecraft:long_strength"}]}]}]}

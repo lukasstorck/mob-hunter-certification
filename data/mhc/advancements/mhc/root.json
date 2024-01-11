@@ -3,8 +3,8 @@
         "icon": {
             "item": "minecraft:diamond_sword"
         },
-        "title": "Mob Hunter Certification",
-        "description": "Gain certifications and rewards for defeating mobs",
+        "title": "Mob Hunting Rewards",
+        "description": "Gain rewards for defeating mobs",
         "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
         "show_toast": false
     },

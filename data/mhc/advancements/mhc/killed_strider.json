@@ -1,1 +1,0 @@
-{"display": {"icon": {"item": "minecraft:strider_spawn_egg"}, "title": "Certified Strider Hunter", "description": "Kill a strider"}, "parent": "mhc:mhc/killed_llama", "criteria": {"killed_strider": {"trigger": "minecraft:player_killed_entity", "conditions": {"entity": {"type": "minecraft:strider"}}}}, "rewards": {"function": "mhc:add_5_points", "loot": ["mhc:reward_diamond"]}}

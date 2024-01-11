@@ -1,2 +1,8 @@
 # ignore zipped datapack
 mob-hunter-certification.zip
+
+# ignore generated files
+data/mhc/advancements/mhc/killed_*.json
+data/mhc/advancements/mhc/tier_*.json
+data/mhc/functions/add_*.json
+data/mhc/loot_tables/reward_*.json

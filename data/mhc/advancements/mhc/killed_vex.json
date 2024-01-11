@@ -1,1 +1,0 @@
-{"display": {"icon": {"item": "minecraft:vex_spawn_egg"}, "title": "Certified Vex Hunter", "description": "Kill a vex"}, "parent": "mhc:mhc/killed_vindicator", "criteria": {"killed_vex": {"trigger": "minecraft:player_killed_entity", "conditions": {"entity": {"type": "minecraft:vex"}}}}, "rewards": {"function": "mhc:add_20_points", "loot": ["mhc:reward_withering"]}}
