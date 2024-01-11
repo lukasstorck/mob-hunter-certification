@@ -10,7 +10,7 @@ def capitalize_all(x: str):
 
 
 def generate_point_functions():
-    path_functions = pathlib.Path('data/mhc/functions')
+    path_functions = pathlib.Path('data/mhr/functions')
     for old_file in path_functions.glob('add_*.mcfunction'):
         old_file.unlink()
 
@@ -22,7 +22,7 @@ def generate_point_functions():
 
 
 def generate_loot_tables():
-    path_loot_tables = pathlib.Path('data/mhc/loot_tables')
+    path_loot_tables = pathlib.Path('data/mhr/loot_tables')
     for old_file in path_loot_tables.glob('reward_*.json'):
         old_file.unlink()
 
@@ -53,7 +53,7 @@ def generate_loot_tables():
 
 
 def generate_mob_advancements():
-    path_advancements = pathlib.Path('data/mhc/advancements/mhc')
+    path_advancements = pathlib.Path('data/mhr/advancements/mhr')
     for old_file in path_advancements.glob('killed_*.json'):
         old_file.unlink()
 
@@ -66,7 +66,7 @@ def generate_mob_advancements():
                 '<mob>', capitalize_all(mob.replace('_', ' ')))
             description = config['advancement_description'].replace(
                 '<mob>', mob.replace('_', ' '))
-            point_function_name = f'mhc:add_{tier["points"]}_point{"" if tier["points"] == 1 else "s"}'
+            point_function_name = f'mhr:add_{tier["points"]}_point{"" if tier["points"] == 1 else "s"}'
             data = {
                 'display': {
                     'icon': {
@@ -75,7 +75,7 @@ def generate_mob_advancements():
                     'title': title,
                     'description': description,
                 },
-                'parent': f'mhc:mhc/{parent}',
+                'parent': f'mhr:mhr/{parent}',
                 'criteria': {
                     f'killed_{mob}': {
                         'trigger': 'minecraft:player_killed_entity',
@@ -88,7 +88,7 @@ def generate_mob_advancements():
                 },
                 'rewards': {
                     'function': point_function_name,
-                    'loot': [f'mhc:reward_{tier_name}']
+                    'loot': [f'mhr:reward_{tier_name}']
                 }
             }
             file_name = f'killed_{mob}.json'
@@ -118,7 +118,7 @@ def generate_tier_advancement(path: str, name: str, icon: str, title: str, descr
             'show_toast': False,
             'announce_to_chat': False,
         },
-        'parent': f'mhc:mhc/{parent}',
+        'parent': f'mhr:mhr/{parent}',
         'criteria': {
             'true': {
                 'trigger': 'minecraft:tick'
@@ -129,7 +129,7 @@ def generate_tier_advancement(path: str, name: str, icon: str, title: str, descr
 
 
 def generate_tier_advancements():
-    path_advancements = pathlib.Path('data/mhc/advancements/mhc')
+    path_advancements = pathlib.Path('data/mhr/advancements/mhr')
     for old_file in path_advancements.glob('tier_*.json'):
         old_file.unlink()
 
